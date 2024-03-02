@@ -1,6 +1,6 @@
-const { override, addBabelPlugin } = require('customize-cra');
+const { override, useBabelRc } = require("customize-cra");
 
 module.exports = override(
-  addBabelPlugin('@babel/plugin-proposal-optional-chaining')
-  // Thêm các plugin và loader khác tại đây nếu cần
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  useBabelRc()
 );
